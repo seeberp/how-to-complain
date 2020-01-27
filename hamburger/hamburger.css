@@ -1,0 +1,204 @@
+ /* Remove the navbar's default rounded borders and increase the bottom margin */
+ html {
+     position: relative;
+     min-height: 100%;
+ }
+ body {
+     /* Margin bottom by footer height */
+     /* margin-bottom: 120px; */
+	height: 100%;
+ }
+
+ .navbar-custom {
+     background-color: #1f9fce;
+     color: #ffffff;
+     border-radius:0;
+     border: none;
+     /* font-size: 1.4em; */
+ }
+ .navbar-custom .navbar-nav > li > a {
+     color:#fff;
+ }
+
+ .navbar-custom .navbar-nav > .active > a {
+     color: #ffffff;
+     background-color:transparent;
+ }
+
+ .navbar-custom .navbar-nav > li > a:hover,
+ .navbar-custom .navbar-nav > li > a:focus,
+ .navbar-custom .navbar-nav > .active > a:hover,
+ .navbar-custom .navbar-nav > .active > a:focus,
+ .navbar-custom .navbar-nav > .open >a {
+     text-decoration: none;
+     background-color: #ffffff;
+     color: #1f9fce;
+ }
+
+ .navbar-custom .navbar-brand {
+     color:#eeeeee;
+ }
+ .navbar-custom .navbar-toggle {
+     background-color:#eeeeee;
+ }
+ .navbar-custom .icon-bar {
+     background-color:#ffffff;
+ }
+
+/* Remove the jumbotron's default bottom margin */
+.jumbotron {
+    margin-bottom: 0 !important;
+    background-color: white;
+
+    padding: 10px 0px 10px 0px;
+    color: #1f9fce;
+}
+.jumbotron h1{
+    font-weight: bold;
+
+}
+/* No style on How to Complain */
+.jumbotron a {
+    text-decoration: none;
+}
+:hover .jumbotron a {
+    color:#337ab7;
+}
+
+.panel, .panel-heading, .panel-body, .panel-footer {
+    border: #0b2e13;
+    -webkit-box-shadow: none;
+    background: none;
+}
+.panel-default .panel-heading{
+    font-weight: bold;
+    background: none;
+}
+.panel-body {
+    border-style: solid;
+    border-width: 2px;
+    border-color: #bcbcbc;
+}
+.panel-button {
+    margin-top: 10px;
+    margin-left: 12px;
+}
+.panel-default{
+    padding-bottom: 40px;
+}
+
+.btn-primary {
+    border-radius: 0;
+    background-color: #1f9fce;
+    border: none;
+}
+
+
+#download {
+	background: #1f9fce;
+	color: white;
+	
+}
+
+/* Add a gray background color and some padding to the footer */
+footer {
+	
+	width: 100%;
+	position: absolute;
+    background-color: #f2f2f2;
+    /* padding: 25px; */
+
+    /* position: absolute;
+    bottom: 0;
+    /* Set the fixed height of the footer here */
+    /* height: 120px; */
+}
+
+
+
+
+ /* Small Devices, Landscape Phones and Phablets, Portrait Tablets, Small Desktops */
+ @media only screen and (min-width : 768px) {
+
+    .row-flex, .row-flex > div[class*='col-'] {  
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex:1 1 auto;
+    }
+    
+    .row-flex-wrap {
+        -webkit-flex-flow: row wrap;
+        align-content: flex-start;
+        flex:0;
+    }
+    
+    .row-flex > div[class*='col-'], .container-flex > div[class*='col-'] {
+         margin:-.2px; /* hack adjust for wrapping */
+    }
+    
+    .flex-col {
+        display: flex;
+        display: -webkit-flex;
+        flex: 1 100%;
+        flex-flow: column nowrap;
+    }
+    
+    .flex-grow {
+        display: flex;
+        -webkit-flex: 2;
+        flex: 2;
+    }
+}
+
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 20%;
+    margin-top: 20px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+
+	
